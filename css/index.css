@@ -1,0 +1,1178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #dedede;
+    margin: auto;
+    font-family: 'Microsoft YaHei';
+    max-width: 1200px;
+}
+
+/* .navi{
+     background-color: white;
+     border: 1px solid gray;
+     width: 80%;
+     margin: auto;
+     padding: 15px;
+     text-align: center;
+     line-height: 40px;
+     box-shadow: 1px 1px 1px 1px #848484
+   } */
+
+.subtitle p {
+    font-size: 24px;
+    padding: 20px;
+    box-shadow: 1px 1px 1px 1px #848484;
+    background: #CCFF99;
+}
+
+main {
+    display: grid;
+    grid-auto-rows: min-content;
+}
+
+article {
+    background: white;
+    box-shadow: 1px 1px 1px 1px #848484;
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    grid-template-columns: 33% calc(67% - 55px) 55px;
+    grid-auto-rows: min-content;
+    max-width: calc(100vw - 10px);
+    position: relative;
+    padding: 15px 10px;
+    background-color: white;
+    margin: 10px;
+}
+
+.grid-area_tittle {
+    grid-row: 1;
+    grid-column: 2 / span 2;
+}
+
+.grid-area_img {
+    text-align: center;
+    width: auto;
+    grid-row: 1 / span 2;
+    grid-column: 1;
+}
+
+.grid-area_description {
+    grid-row: 2;
+    grid-column: 2 / span 2;
+}
+
+/* .grid-area_button{
+  height: 30px;
+  grid-row: 3; 
+  grid-column: 1 / span 3; 
+} */
+
+/* .grid-area{
+
+} */
+
+article h1 {
+    padding: 5px;
+    height: 60px;
+    text-align: center;
+}
+
+article img {
+    padding: 15px 0;
+    margin: 0 auto;
+}
+
+article p {
+    padding: 10px;
+    margin: 10px, 0;
+    margin-bottom: 10px;
+    height: 100px;
+}
+
+/*nav part*/
+
+nav {
+    display: block;
+    background: #333333;
+    position: relative;
+    height: 50px;
+    box-shadow: 1px 1px 1px 1px #848484;
+}
+
+/* header img{
+    height: 45px;
+    margin-left:20px; 
+    margin-top: 2.5px;
+  } */
+
+nav ul {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    list-style: none;
+    margin-left: 10px;
+}
+
+nav ul li {
+    float: left;
+    text-align: center;
+    padding: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+nav ul li:hover {
+    background: #474747;
+    border-radius: 5px;
+    border-bottom: 1px solid red;
+}
+
+/* intro part */
+
+.intro {
+    background: #99cc33;
+    display: block;
+    box-shadow: 1px 1px 1px 1px #848484
+}
+
+.introItem {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.introPhoto {
+    display: table-cell;
+    width: 33.3333%;
+    padding: 8px 16px !important;
+}
+
+.introDescription {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    padding: 8px 16px !important;
+}
+
+/*footer part*/
+
+footer {
+    background: #336699;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;
+    box-shadow: 1px 1px 1px 1px #848484
+}
+
+.login {
+    background: white;
+    box-shadow: 1px 1px 1px 1px #848484;
+    display: grid;
+    grid-template-rows: repeat(8, min-content);
+    position: relative;
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+}
+
+.login-img {
+    grid-row: 1;
+    margin: auto auto;
+}
+
+.login img {
+    width: 300px;
+    padding: 20px;
+}
+
+.login-username {
+    grid-row: 3;
+    margin: auto auto;
+    padding: 10px;
+}
+
+.login-password {
+    grid-row: 4;
+    margin: auto auto;
+    padding: 10px;
+}
+
+.login-valid {
+    grid-row: 5;
+    margin: auto auto;
+    padding: 10px 10px 5px 10px;
+}
+
+.login-validimg {
+    grid-row: 6;
+    margin: auto auto;
+    padding: 0 10px 10px 10px;
+}
+.login-test-button{
+    grid-row: 5;
+    margin: auto auto;
+    padding: 10px 10px 5px 10px;
+}
+.register-test-button {
+    grid-row: 6;
+    margin: auto auto;
+    padding: 0 10px 10px 10px;
+}
+.login-button {
+    grid-row: 7;
+    margin: auto auto;
+    padding: 10px;
+}
+
+.login input {
+    width: 300px;
+    height: 40px;
+    text-align: center;
+}
+
+.register-button {
+    grid-row: 8;
+    margin: auto auto;
+    padding: 10px;
+}
+
+.login #code {
+    width: 150px;
+}
+
+.register {
+    background: white;
+    box-shadow: 1px 1px 1px 1px #848484;
+    display: grid;
+    grid-template-rows: repeat(8, min-content);
+    position: relative;
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+}
+
+.register-img {
+    grid-row: 1;
+    margin: auto auto;
+}
+
+.register img {
+    width: 300px;
+    padding: 20px;
+}
+
+.respond {
+    grid-row: 2;
+    margin: auto auto;
+    padding: 10px;
+    color: red;
+    display: none;
+}
+
+.register-username {
+    grid-row: 3;
+    margin: auto auto;
+    padding: 10px;
+}
+
+.register-password {
+    grid-row: 4;
+    margin: auto auto;
+    padding: 10px;
+}
+
+.confirm-password {
+    grid-row: 5;
+    margin: auto auto;
+    padding: 10px;
+}
+
+.register-valid {
+    grid-row: 6;
+    margin: auto auto;
+    padding: 10px 10px 5px 10px;
+}
+
+.register-validimg {
+    grid-row: 7;
+    margin: auto auto;
+    padding: 0 10px 10px 10px;
+}
+
+.register input {
+    width: 300px;
+    height: 40px;
+    text-align: center;
+}
+
+.in-register-button {
+    grid-row: 8;
+    margin: auto auto;
+    padding: 10px;
+}
+.in-registerTest-button {
+    grid-row: 6;
+    margin: auto auto;
+    padding: 10px 10px 5px 10px;
+}
+
+
+.register #code {
+    width: 150px;
+}
+
+.peanut {
+    background: white;
+    box-shadow: 1px 1px 1px 1px #848484;
+    display: block;
+    grid-template-rows: repeat(3, min-content);
+    position: relative;
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+}
+
+.peanut .peanutUsernameTitle {
+    font-size: 30px;
+    margin: 20px 15px;
+}
+
+.peanut .peanutUsername {
+    font-size: 24px;
+    margin: auto auto;
+    width: 50%;
+    text-align: center;
+}
+
+.peanut .peanutTitle {
+    font-size: 30px;
+    margin: 20px 15px;
+}
+
+.peanut .peanutPoint {
+    font-size: 24px;
+    margin: auto auto;
+    width: 50%;
+    text-align: center;
+}
+
+.peanutButtonList {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+    background-color: white;
+    margin: auto auto;
+    padding: 15px;
+    width: 66%;
+}
+
+.peanutPointDetail {
+    grid-column: 1;
+    padding: 10px;
+}
+
+.peanutPointTop {
+    grid-column: 2;
+    padding: 10px;
+}
+
+.peanutPointTop input,
+.peanutPointDetail input {
+    background-color: #698B22;
+    color: white;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+}
+
+.peanutPointTop input:hover,
+.peanutPointDetail input:hover {
+    background-color: #8B0000;
+}
+
+.peanutDetailsBackButton {
+    text-align: left;
+}
+
+.peanutDetailsBackButton input,
+.rechargeBackButton input {
+    background-color: #698B22;
+    color: white;
+    width: 10%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+}
+
+.peanutDetailsBackButton input:hover,
+.rechargeBackButton input:hover {
+    background-color: #8B0000;
+}
+
+.rechargeWorkplace {
+    background: white;
+    box-shadow: 1px 1px 1px 1px #848484;
+    display: block;
+    grid-template-rows: repeat(3, min-content);
+    position: relative;
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+}
+
+.rechargeImg,
+.aboutImg {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.rechargeAmount {
+    text-align: center;
+}
+
+.rechargeAmount input {
+    width: 50%;
+    height: 45px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.rechargeButton {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.rechargeButton input {
+    background-color: #698B22;
+    color: white;
+    width: 10%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+}
+
+.rechargeButton input:hover {
+    background-color: #8B0000;
+}
+
+.aboutWorkplace {
+    background: white;
+    box-shadow: 1px 1px 1px 1px #848484;
+    display: block;
+    grid-template-rows: repeat(3, min-content);
+    position: relative;
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+}
+
+.aboutTitle {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+.adminWorkplace {
+    background: white;
+    box-shadow: 1px 1px 1px 1px #848484;
+    display: block;
+    position: relative;
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+}
+.adminAppdetails{
+    display: grid;
+    grid-template-rows: repeat(4, min-content);
+    grid-template-columns: 25% 30% 30% 15%; 
+    position: relative;
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+    font-size: 20px;
+}
+.adminImg{
+    grid-column: 1;
+    grid-row: 1 /span 4;
+}
+.adminAppNameTitle{
+    grid-column: 2;
+    grid-row: 1;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.adminAppName{
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+}
+.adminAppProviderTitle{
+    grid-column: 3;
+    grid-row: 1;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.adminAppProvider{
+    grid-column: 3;
+    grid-row: 2;
+    text-align: center;
+}
+.adminOff{
+    grid-column: 4;
+    grid-row: 1 /span 2;
+}
+.adminOn{
+    grid-column: 4;
+    grid-row: 3 /span 4;
+}
+.adminDescriptionTitle{
+    grid-column: 2 /span 3;
+    grid-row: 3;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.adminDescription{
+    grid-column: 2 /span 2;
+    grid-row: 4;
+    padding: 10px 25px;
+}
+.adminAppdetails input{
+    background-color: #698B22;
+    color: white;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    margin-top: 30%;
+    height: 50px;
+}
+.adminAppdetails img{
+    width: 100%;
+}
+.adminOff,.adminOn{
+    padding: 0 20px;
+}
+
+.uploadWorkplace {
+    background: white;
+    box-shadow: 1px 1px 1px 1px #848484;
+    display: block;
+    position: relative;
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+}
+
+.uploadWorkplace form {
+    width: max-content;
+    margin: auto auto;
+    width: 100%;
+}
+.uploadGrid{
+    display: grid;
+    grid-template-rows: repeat(6, min-content);
+    grid-template-columns: 50% 50%;
+    font-size: 20px;
+    padding: 20px;
+}
+#uploadSubmitbutton{
+    background-color: #698B22;
+    color: white;
+    width: 10%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+}
+.fileButton{
+
+    color: #698B22;
+    width: 10%;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+}
+.uploadGrid input{
+    height: 30px;
+    width: auto;
+}
+.uploadAppNameTitle{
+    grid-row: 1;
+    grid-column: 1;
+    text-align: right;
+    padding: 20px;
+}
+.uploadAppName{
+    grid-row: 1;
+    grid-column: 2;
+    padding: 20px;
+}
+
+.uploadDescriptionTitle{
+    grid-row: 2;
+    grid-column: 1;
+    text-align: right;
+    padding: 20px;
+}
+.uploadDescription{
+    grid-row: 2;
+    grid-column: 2;
+    padding: 20px;
+}
+.uploadImageTitle{
+    grid-row: 3;
+    grid-column: 1;
+    text-align: right;
+    padding: 20px;
+}
+.uploadImage{
+    grid-row: 3;
+    grid-column: 2;
+    padding: 20px;
+}
+.uploadChargeTitle{
+    grid-row: 4;
+    grid-column: 1;
+    text-align: right;
+    padding: 20px;
+}
+.uploadCharge{
+    grid-row: 4;
+    grid-column: 2;
+    padding: 20px;
+}
+.uploadFileTitle{
+    grid-row: 5;
+    grid-column: 1;
+    text-align: right;
+    padding: 20px;
+}
+.uploadFile{
+    grid-row: 5;
+    grid-column: 2;
+    padding: 20px;
+}
+.submit{
+    grid-row: 6;
+    grid-column: 1 / span 2;
+    text-align: center;
+    padding: 20px;
+}
+#Description{
+    font-size: 15px;
+    font-family: 'Microsoft YaHei';
+}
+
+
+.second-hand {
+    background: white;
+    box-shadow: 1px 1px 1px 1px #848484;
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    position: relative;
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+}
+
+.form-second-hand {
+    background: white;
+    box-shadow: 1px 1px 1px 1px #848484;
+    position: relative;
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+}
+
+.line HR {
+    width: 88%;
+    margin: auto auto;
+}
+
+.my-goods {
+    grid-row: 1;
+    padding: 10px;
+}
+
+.my-goods-list {
+    display: grid;
+    box-shadow: 1px 1px 1px 1px #848484;
+    position: relative;
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+}
+
+.goodsGrid {
+    display: grid;
+    box-shadow: 1px 1px 1px 1px #848484;
+    grid-template-rows: repeat(7, min-content);
+    position: relative;
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+}
+.addGoodImage{
+    margin: 10px;
+    padding: 15px;
+    display: table;
+    height: 95.1%;
+}
+.addGoodImage span{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.addGoodImage img{
+    display: inline-block;
+    width: 50%;
+}
+.goodsPhoto {
+    grid-row: 1;
+    padding: 10px;
+    margin: auto auto;
+}
+
+.goodsNameTitle {
+    grid-row: 2;
+    padding: 10px;
+}
+
+.goodsName {
+    grid-row: 3;
+    padding: 10px;
+    text-align: center;
+}
+
+.goodsDescriptionTitle {
+    grid-row: 4;
+    padding: 10px;
+}
+
+.goodsDescription {
+    grid-row: 5;
+    padding: 10px;
+    text-align: center;
+}
+
+.goodsPriceTitle {
+    grid-row: 6;
+    padding: 10px;
+}
+
+.goodsPrice {
+    grid-row: 7;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+#pagination {
+    text-align: center;
+}
+
+#pagination li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    margin: auto auto;
+}
+
+#pagination li a {
+    font-size: 20px;
+}
+
+.peanutDetailsList {
+    background: white;
+    box-shadow: 1px 1px 1px 1px #848484;
+    display: grid;
+    grid-template-rows: repeat(6, min-content);
+    position: relative;
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.titleRow {
+    grid-row: auto;
+    padding: 10px;
+}
+
+.peanutDetailsTitle {
+    background: white;
+    display: grid;
+    grid-template-columns: 25% 15% 15% 15% 30%;
+    position: relative;
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.peanutDetailsItem {
+    background: white;
+    display: grid;
+    grid-template-columns: 25% 15% 15% 15% 30%;
+    position: relative;
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+    main {
+        grid-template-columns: repeat(3, auto);
+    }
+    article {
+        max-width: 400px;
+        margin: 15px;
+        grid-template-rows: repeat(3, min-content);
+        grid-template-columns: 100%;
+    }
+    .grid-area {
+        grid-column: 1;
+    }
+    .grid-area_tittle {
+        grid-row: 1;
+    }
+    .grid-area_img {
+        grid-row: 2;
+    }
+    .grid-area_description {
+        grid-row: 3;
+    }
+    .grid-area_d {
+        flex-direction: row;
+    }
+    .login {
+        background: white;
+        box-shadow: 1px 1px 1px 1px #848484;
+        display: grid;
+        grid-template-rows: repeat(7, min-content);
+        grid-template-columns: 66% calc(33%- 50px) 50px;
+        grid-auto-rows: min-content;
+        position: relative;
+        padding: 15px 10px;
+        background-color: white;
+        margin: 10px;
+        padding: 15px;
+    }
+    .login-img {
+        grid-row: 1 / span 5;
+        grid-column: 1 / span 1;
+        margin: auto auto;
+    }
+    .login img {
+        width: 300px;
+        padding: 20px;
+    }
+    .login-username {
+        width: auto;
+        grid-row: 2;
+        grid-column: 2;
+        margin: 20px 0 0 0;
+    }
+    .login-password {
+        grid-row: 3;
+        grid-column: 2;
+        margin: auto 0;
+    }
+    .login-valid {
+        grid-row: 4;
+        grid-column: 2;
+        margin: auto 0;
+    }
+    .login-validimg {
+        grid-row: 5;
+        grid-column: 2;
+        margin: 0;
+    }
+    .login-test-button {
+        grid-row: 4;
+        grid-column: 2;
+        margin: auto 0;
+    }
+    .register-test-button {
+        grid-row: 5;
+        grid-column: 2;
+        margin: 0;
+    }
+    .login-button {
+        grid-row: 6;
+        grid-column: 2;
+        margin: 0px 0 0 0;
+    }
+    .register-button {
+        grid-row: 7;
+        grid-column: 2;
+        margin: 0px 0;
+    }
+    .login input {
+        width: 66%;
+        height: 40px;
+        text-align: center;
+    }
+    .login #code {
+        width: 66%;
+    }
+    .register {
+        background: white;
+        box-shadow: 1px 1px 1px 1px #848484;
+        display: grid;
+        grid-template-rows: repeat(7, min-content);
+        grid-template-columns: 66% calc(33%- 50px) 50px;
+        grid-auto-rows: min-content;
+        position: relative;
+        padding: 15px 10px;
+        background-color: white;
+        margin: 10px;
+        padding: 15px;
+    }
+    .register-img {
+        grid-row: 1 / span 5;
+        grid-column: 1 / span 1;
+        margin: auto auto;
+    }
+    .register img {
+        width: 300px;
+        padding: 20px;
+    }
+    .respond {
+        grid-row: 1;
+        padding: 10px;
+        width: 62%;
+        margin: 0;
+        text-align: center;
+        color: red;
+        display: none;
+    }
+    .register-username {
+        width: auto;
+        grid-row: 2;
+        grid-column: 2;
+        margin: 20px 0 0 0;
+    }
+    .register-password {
+        grid-row: 3;
+        grid-column: 2;
+        margin: auto 0;
+    }
+    .confirm-password {
+        grid-row: 4;
+        grid-column: 2;
+        margin: auto 0;
+    }
+    .register-valid {
+        grid-row: 5;
+        grid-column: 2;
+        margin: auto 0;
+    }
+    .register-validimg {
+        grid-row: 6;
+        grid-column: 2;
+        margin: 0;
+    }
+    .in-register-button {
+        grid-row: 7;
+        grid-column: 2;
+        margin: 20px 0 0 0;
+        padding: 0px 10px;
+    }
+    .in-registerTest-button {
+        grid-row: 5;
+        grid-column: 2;
+        margin: auto 0;
+    }
+    .register input {
+        width: 66%;
+        height: 40px;
+        text-align: center;
+    }
+    .register #code {
+        width: 66%;
+    }
+    .my-goods {
+        grid-row: 1;
+        padding: 10px;
+    }
+    
+    .my-goods-list {
+        display: grid;
+        box-shadow: 1px 1px 1px 1px #848484;
+        grid-template-columns: repeat(3, 33%);
+        position: relative;
+        background-color: white;
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    .goodsGrid {
+        display: grid;
+        box-shadow: 1px 1px 1px 1px #848484;
+        grid-template-rows: repeat(7, min-content);
+        position: relative;
+        background-color: white;
+        margin: 10px;
+        padding: 15px;
+    }
+    .addGoodImage{
+        margin: 10px;
+        padding: 15px;
+        display: table;
+        height: 95.1%;
+    }
+    .addGoodImage span{
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .addGoodImage img{
+        display: inline-block;
+        /* width:100%; */
+    }
+    .goodsPhoto {
+        grid-row: 1;
+        padding: 10px;
+        margin: auto auto;
+    }
+    
+    .goodsNameTitle {
+        grid-row: 2;
+        padding: 10px;
+    }
+    
+    .goodsName {
+        grid-row: 3;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .goodsDescriptionTitle {
+        grid-row: 4;
+        padding: 10px;
+    }
+    
+    .goodsDescription {
+        grid-row: 5;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .goodsPriceTitle {
+        grid-row: 6;
+        padding: 10px;
+    }
+    
+    .goodsPrice {
+        grid-row: 7;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 533px) {
+    /* main 
+       { 
+           grid-template-columns: repeat(3, auto); 
+      }  */
+    article {
+        height: fit-content;
+        margin: 10px;
+        grid-template-rows: repeat(3, min-content);
+        grid-template-columns: 100%;
+    }
+    .grid-area {
+        grid-column: 1;
+    }
+    .grid-area_tittle {
+        grid-row: 1;
+    }
+    .grid-area_img {
+        grid-row: 2;
+    }
+    .grid-area_description {
+        grid-row: 3;
+    }
+    .grid-area_d {
+        flex-direction: row;
+    }
+    .introPhoto {
+        display: block;
+    }
+    .introDescription {
+        display: block;
+    }
+    /* nav part */
+    nav {
+        position: relative;
+        height: 73px;
+    }
+    nav ul {
+        width: 180px;
+        padding: 5px 0;
+        position: absolute;
+        top: 10px;
+        right: 5%;
+        border: solid 1px #aaa;
+        background: #333;
+        border-radius: 10px;
+        box-shadow: 0 1px 2px #848484;
+    }
+    nav ul li {
+        display: none;
+        /* hide all <li> items */
+        margin: 0;
+        float: none;
+        width: 100%;
+        padding: 5px 0;
+    }
+    nav .current {
+        display: block;
+        /* show only current <li> item */
+    }
+    nav ul li a {
+        display: block;
+        padding: 5px 5px 5px 50px;
+        text-align: center;
+    }
+    nav .current a {
+        background: none;
+        color: white;
+    }
+    /* on nav hover */
+    nav ul:hover {
+        background-image: none;
+    }
+    nav ul:hover li {
+        display: block;
+        margin: 0 0 5px;
+    }
+    /* it can give a check indicator but i have animation */
+    /* nav ul:hover .current {
+        
+        } */
+    footer {
+        height: 100px;
+    }
+}
